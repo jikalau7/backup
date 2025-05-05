@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root { 
+    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+    --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #5f687b; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #024CAA; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+    --orange-color: #FF6500;
+  }
+  
+  /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+  :root {
+    --nav-color: #FF6500;  /* The default color of the main navmenu links */
+    --nav-hover-color: #024CAA; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #5f687b; /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #FF6500; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#fff ;
+    overflow-x: hidden;
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/*default*/
+    html,body{
+        height: 100%;
+    }
+    .tour{
+        width: 100%;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation:fade 1s ease-in-out;
+    }
+  .tour .container{
+    text-align: center;
+    padding-top: 200px;
+  }
+  .tour .container h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px white;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  .tour .container h5{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    margin-top: 5px;
+  }
+  .tour .container p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+
+  @media(max-width:850px){
+    .tour{
+      background-position: 50%;
+    }
+  }
+  @media(max-width:450px){
+    .tour .container h5{
+      font-size: 25px;
+    }
+    .tour.container h1{
+      font-size: 28px;
+    }
+    .tour.container p{
+      font-size: 13px;
+    }
+  }
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

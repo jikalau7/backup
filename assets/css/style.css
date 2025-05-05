@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root { 
+    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+    --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #5f687b; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #024CAA; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+    --orange-color: #FF6500;
+  }
+  
+  /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+  :root {
+    --nav-color: #FF6500;  /* The default color of the main navmenu links */
+    --nav-hover-color: #024CAA; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #5f687b; /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #FF6500; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#fff ;
+    overflow-x: hidden;
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/*default*/
+html,body{
+    height: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+p{
+    line-height: 1.7;
+    margin: 0;
+}
+a:focus,a:hover{
+    text-decoration: none;
+    transition: 1s;
+}
+/*default*/
+/*about*/
+#about-us{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.about-us-img{
+    margin-top: 20px;
+}
+.about-us-title p:nth-child(1){
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--nav-color);
+} 
+.thin-text{
+    font-weight: 500;
+    color: var(--accent-color);
+
+}
+.about-us-title p:nth-child(2){
+    font-size: 18px;
+    margin-top: -5px;
+    letter-spacing: 2px;
+} 
+.about-us-text{
+    padding-left: 30px;
+}
+.about-us-explanation p{
+    padding-top: 25px;
+    text-align: justify;
+    font-size: 14px;
+    color: #748182;
+}
+.about-us-information{
+    padding-top: 10px;
+}
+.about-us-information-detail{
+    position: relative;
+    padding-top: 5px;
+}
+.about-us-information-detail i{
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: var(--accent-color);
+    line-height: 30px;
+    background:#f4f5f8;
+    text-align: center;
+}
+.about-us-information-detail p{
+    padding-left: 40px;
+    font-size: 16px;
+}
+.about-us-information-detail p:nth-child(2){
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: var(--accent-color);
+}
+.about-us-information-detail p:nth-child(3){
+    padding-top: 0;
+    color: #748182;
+    font-size: 14px;
+}
+.about-us-information-cta{
+    padding-top: 35px;
+    animation: pop linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.about-us-information-cta a{
+    text-decoration: none;
+}
+.about-us-information-cta a:nth-child(1){
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: var(--accent-color);
+    padding: 11px 40px;
+    border-radius: 50px;
+    border: 1px solid var(--accent-color);
+    margin-right: 20px;
+}
+.about-us-information-cta a:nth-child(1):hover{
+    color: var(--orange-color);
+    background: transparent;
+    border-color: var(--orange-color);
+}
+.about-us-contact{
+    padding-top: 30px;
+}
+.about-us-contact p{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.about-us-contact i{
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 20px;
+    letter-spacing: 15px;
+    color: var(--accent-color);
+    transition: 1s;
+}
+.about-us-contact i:hover{
+    color: var(--orange-color);
+}
+#about-project{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.about-project-img{
+    margin-top: 20px;
+}
+.about-project-title p:nth-child(1){
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--nav-dropdown-color);
+} 
+.orange{
+    color: var(--orange-color);
+}
+.blue{
+    color: var(--accent-color);
+}
+.thin-text{
+    font-weight: 500;
+    color: var(--accent-color);
+
+}
+.about-project-title p:nth-child(2){
+    font-size: 18px;
+    margin-top: -15px;
+    letter-spacing: 2px;
+}
+.about-project-explanation{
+    text-align: justify;
+    font-size: 15px;
+    color: #748182;
+}
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--nav-dropdown-color);
+    text-align: center;
+}
+
+@media(max-width: 767px){
+    .about-us-text{
+        padding-left: 0;
+        padding-top: 30px;
+    }
+}
+@keyframes showUp{
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
