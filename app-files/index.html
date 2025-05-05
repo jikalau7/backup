@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SkadaciTour</title>
+<link rel="icon" href="../assets/img/logo.jpg">
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList" style="display: none;">
+  <ul class="scenes" >
+
+      <a href="javascript:void(0)" class="scene" data-id="2-go">
+        <li class="text">COE</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="0-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-persimpangan-5">
+        <li class="text">Persimpangan 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="107-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="108-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="109-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="110-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="111-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="112-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="113-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="114-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="115-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="116-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="117-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="118-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="119-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="120-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="121-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="122-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="123-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="124-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="125-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="126-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="127-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="128-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="129-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="130-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="131-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="132-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="133-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="134-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="135-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="136-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="137-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="138-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="139-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="140-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="141-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="142-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="143-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="144-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="145-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="146-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="147-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="148-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="149-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="150-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="151-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="152-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="153-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="154-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="155-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="156-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="157-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="158-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="159-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="160-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="161-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="162-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="163-go">
+        <li class="text">Go</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="164-go">
+        <li class="text">Go</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar" style="display: none;">
+  <h1 class="sceneName"></h1>
+</div>
+<a class="balik" href="../tour.html" style="width: 50px;height: 50px;position: fixed;margin-left: 15px;margin-top: 15px;">
+  <img src="img/tutup.png" style="width: 50%;height: auto; display: block;">
+</a>
+
+<a href="javascript:void(0)" id="autorotateToggle" style="display: none;">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle" style="display: none;">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle" style="display: none;">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
